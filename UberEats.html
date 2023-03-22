@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="" en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="" ie=edge">
+    <title>Uber Eats</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .header-outer {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        height: 80px;
+    }
+
+    .header-inner {
+        height: 70px;
+        position: sticky;
+        top: 0;
+    }
+
+    .header-outer {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        background-color: #f8d100;
+        top: -10px;
+        /* Equal to the height difference between header-outer and header-inner */
+        height: 80px;
+    }
+
+    body {
+        margin 0px;
+        padding 0px;
+        background: url('a.jpg');
+        background-repeat: no-repeat;
+        background-size: 1324px 768px;
+
+    }
+
+    img .left {
+        position: absolute;
+        left: 34px;
+        display: inline-block;
+        margin: 28px 1px;
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        display: inline-block;
+        margin: 26px 12px;
+    }
+
+    #btn1 {
+        margin: 0px 4px;
+        background-color: white;
+        color: black;
+        padding: 12px 16px;
+        border: 2px solid white;
+        border-radius: 50px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #btn2 {
+        margin: 0px 4px;
+        background-color: black;
+        color: white;
+        padding: 14px 16px;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48;
+        font-size: large;
+        top: auto;
+
+    }
+
+    #btn1:hover {
+        background-color: rgb(157, 157, 157);
+        border-color: rgb(156, 156, 156);
+    }
+
+    #btn2:hover {
+        background-color: rgb(32, 32, 32);
+    }
+
+    #login {
+        font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48;
+        font-size: large;
+        top: auto;
+        margin: auto;
+
+    }
+
+    #butn1 {
+        margin: 0px 4px;
+        background-color: white;
+        color: black;
+        padding: 12px 16px;
+        border: 2px solid white;
+        border-radius: 1px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #butn2 {
+        margin: 0px 4px;
+        background-color: black;
+        color: white;
+        padding: 14px 16px;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    div.menu {
+        display: inline-block;
+    }
+
+    div.left {
+        display: inline-block;
+    }
+
+    #hamburger {
+        padding: 33px 18px;
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    #order {
+        display: block;
+        font-size: 3em;
+        padding-top: 100px;
+        padding-left: 30px;
+        font-weight: bold;
+    }
+
+    #input {
+
+        margin: 15px;
+        margin-right: 0px;
+        ;
+        margin-left: 0px;
+        padding-left: 40px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-left: 2px;
+        border-right: 2px;
+        border-top: 2px;
+        border-color: black;
+        height: 20px;
+    }
+
+    span {
+        margin: auto;
+    }
+
+    a {
+        color: black;
+    }
+
+    p {
+        padding: 25px;
+        padding-top: 0%;
+        height: 0.8en;
+    }
+
+    .empty {
+        width: 90%;
+        height: 330px;
+
+    }
+
+    .row {
+        margin-left: 20px;
+        display: flex;
+    }
+
+    .column {
+        flex: 30%;
+        padding: 5px;
+    }
+
+    #column {
+        margin: 0%;
+        display: inline-block;
+        align-items: center;
+
+
+    }
+
+    #column1 {
+        margin: 0%;
+        display: inline-block;
+        align-items: center;
+        font-weight: normal;
+    }
+
+    #cities {
+        margin-left: 20px;
+        display: flex;
+        flex: 1;
+        margin-top: 80px;
+
+
+    }
+
+    #more {
+        display: flex;
+        position: absolute;
+        right: 20px
+    }
+
+    #map {
+        width: 95%;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+</style>
+
+
+<body>
+    <header class="header-outer">
+        <div class="" header-inner">
+            <div class="left">
+                <div class="menu">
+                    <a href="#" id="menu"><span class="material-symbols-outlined" id="hamburger">
+                            menu
+                        </span></a>
+                </div>
+                <img class="Logo" src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg" alt="">
+            </div>
+            <div class="right">
+                <button class="btn" id="btn1">
+                    <span class="material-symbols-outlined" id="login">
+                        person
+                    </span><b>Log in</b></button>
+                <button class="btn" id="btn2"><b>Sign Up</b></button>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="main">
+        <h1 id="order">Order food to your door</h1>
+        <form id="location" action="noaction.php">
+            <div class="form-group">
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+                <input id="input" type="text" size="70" placeholder="Enter delivery address">
+                <button class="time" id="butn1"><span class="material-symbols-outlined">
+                        schedule
+                    </span> Deliver Now <span class="material-symbols-outlined">
+                        expand_more
+                    </span></button>
+                <button class="submit" id="butn2">Find Food</button>
+
+                <p class="empty"><a href="#">Sign in</a> for your recent addresses
+                <p>
+
+            </div>
+            <section class="body">
+                <div class="row">
+                    <div class="column">
+                        <a href="#"><img src="hv1.png" alt="" style="width:100%"></a>
+                    </div>
+                    <div class="column">
+                        <a href="#"><img src="hv2.png" alt="" style="width:100%"></a>
+                    </div>
+                    <div class="column">
+                        <a href="#"><img src="hv3.png" alt="" style="width:100%"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <a href="#">
+                            <h2 id="column">Feed your employees</h2>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="#">
+                            <h2 id="column">Your restaurant, delivered</h2>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="#">
+                            <h2 id="column">Deliver with Uber Eats</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <a href="#">
+                            <h4 id="column1"><a href="#">Create a business account</a></h4>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="#">
+                            <h4 id="column1"><a href="#">Add your restaurant</a></h4>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="#">
+                            <h4 id="column1"><a href="#">Sign up to deliver</a></h4>
+                        </a>
+                    </div>
+                </div>
+    </div>
+    <div class="map">
+
+        <h1 id="cities">Cities near me</h1>
+        <p><a id="more" href="#">View all 500+ cities</a></p>
+    </div>
+    <img id="map" src="map.png" alt="">
+    </section>
+    
+
+
+</body>
+
+</html>
